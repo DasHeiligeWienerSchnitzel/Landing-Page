@@ -2996,7 +2996,7 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 100em;
+		min-height: 22.5em;
 	}
 
 		body.is-ie .spotlights > section {
@@ -3047,7 +3047,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 50em;
+			width: auto;
 			-ms-flex: 1;
 		}
 
@@ -3063,11 +3063,11 @@ input, select, textarea {
 				opacity: 1;
 			}
 
-		.spotlights > section:nth-child(2) {
+		.spotlights > section:nth-child(even) {
 			background-color: rgba(0, 0, 0, 0.05);
 		}
 
-		.spotlights > section:nth-child(3) {
+		.spotlights > section:nth-child(odd) {
 			background-color: rgba(0, 0, 0, 0.1);
 		}
 
