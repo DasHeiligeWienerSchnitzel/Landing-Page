@@ -2996,11 +2996,11 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 22.5em;
+		min-height: 100em;
 	}
 
 		body.is-ie .spotlights > section {
-			min-height: 100vh;
+			min-height: 0;
 		}
 
 		.spotlights > section > .image {
