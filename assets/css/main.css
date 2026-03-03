@@ -3047,7 +3047,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: auto;
+			width: 50em;
 			-ms-flex: 1;
 		}
 
@@ -3063,11 +3063,11 @@ input, select, textarea {
 				opacity: 1;
 			}
 
-		.spotlights > section:nth-child(even) {
+		.spotlights > section:nth-child(2) {
 			background-color: rgba(0, 0, 0, 0.05);
 		}
 
-		.spotlights > section:nth-child(odd) {
+		.spotlights > section:nth-child(3) {
 			background-color: rgba(0, 0, 0, 0.1);
 		}
 
@@ -3907,18 +3907,3 @@ input, select, textarea {
 			}
 
 		}
-
-#one.wrapper.spotlights {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-#one.wrapper.spotlights > section {
-  min-height: 0 !important;    /* überschreibt min-height: 100em */
-  flex: 1 1 0;
-}
-
-#one.wrapper.spotlights > section + section {
-  border-top: 1px solid rgba(255,255,255,0.08); /* oder rgba(0,0,0,0.08) je nach Style */
-}
