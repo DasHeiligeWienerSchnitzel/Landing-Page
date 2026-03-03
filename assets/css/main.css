@@ -3000,7 +3000,7 @@ input, select, textarea {
 	}
 
 		body.is-ie .spotlights > section {
-			min-height: 0;
+			min-height: 100vh;
 		}
 
 		.spotlights > section > .image {
