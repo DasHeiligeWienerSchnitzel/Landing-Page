@@ -3909,7 +3909,7 @@ input, select, textarea {
 		}
 
 	.project-card {
-	    background-image: url("images/randomroom.jpg");
+	    background-image: url("../../images/pic01.jpg");
 	    background-size: cover;
 	    background-position: center;
 	    padding: 3rem;
