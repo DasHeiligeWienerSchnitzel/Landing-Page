@@ -3908,12 +3908,25 @@ input, select, textarea {
 
 		}
 
-.project-card {
-    background-image: url("images/randomroom.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    border-radius: 10px;
-    position: relative;
-    color: white;
-}
+	.project-card {
+	    background-image: url("images/randomroom.jpg");
+	    background-size: cover;
+	    background-position: center;
+	    padding: 3rem;
+	    border-radius: 10px;
+	    position: relative;
+	    color: white;
+	}
+	
+	.project-card::before {
+	    content: "";
+	    position: absolute;
+	    inset: 0;
+	    background: rgba(0,0,0,0.5);
+	    border-radius: 10px;
+	}
+	
+	.project-card a {
+	    position: relative;
+	    z-index: 2;
+	}
