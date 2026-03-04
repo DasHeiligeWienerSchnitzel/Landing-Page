@@ -3913,11 +3913,9 @@ input, select, textarea {
 	.project-card{
 		position: relative;
 		cursor: pointer;
-		border-radius: 0;
 		overflow: hidden;
 		background-size: cover;
 		background-position: center;
-		padding: 0;
 	}
 	
 	/* Overlay für Lesbarkeit */
