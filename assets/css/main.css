@@ -3926,7 +3926,9 @@ input, select, textarea {
 	    border-radius: 10px;
 	}
 	
-	.project-card a {
-	    position: relative;
-	    z-index: 2;
+	.project-card a{
+	    display:block;
+	    text-decoration:none;
+	    color:inherit;
+	    padding:3rem;
 	}
