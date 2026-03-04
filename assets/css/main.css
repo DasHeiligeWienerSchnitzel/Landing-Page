@@ -3909,33 +3909,68 @@ input, select, textarea {
 
 		}
 
-	/* Projektkarte mit Hintergrundbild */
-	.project-card{
-		position: relative;
-		cursor: pointer;
-		overflow: hidden;
-		background-size: cover;
-		background-position: center;
-	}
-	
-	/* Overlay für Lesbarkeit */
-	.project-card::before{
-		content:"";
-		position:absolute;
-		inset:0;
-		background: rgba(0,0,0,0.5);
-		z-index: 1;
-	}
-	
-	/* Inhalt über dem Overlay */
-	.project-card > *:not(.card-link){
-		position: relative;
-		z-index: 2;
-	}
 
-	/* Link über die ganze Karte */
-	.project-card .card-link{
-		position:absolute;
-		inset:0;
-		z-index: 10;
-	}
+/* Projektkarten */
+
+.features section.project-card{
+    position: relative;
+    padding: 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+
+    cursor: pointer;
+}
+
+/* Lücken zwischen Karten entfernen */
+
+.features{
+    gap: 0;
+}
+
+.features section.project-card{
+    padding: 3rem;
+}
+
+
+/* dunkles Overlay für Lesbarkeit */
+
+.project-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+
+
+/* Text über dem Overlay */
+
+.project-card h3,
+.project-card p,
+.project-card span{
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Klickbarer Bereich über die ganze Karte */
+
+.project-card .card-link{
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+}
+
+
+/* kleiner Hover Effekt */
+
+.project-card{
+    transition: transform 0.25s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.03);
+}
