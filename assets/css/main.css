@@ -3907,3 +3907,13 @@ input, select, textarea {
 			}
 
 		}
+
+.project-card {
+    background-image: url("images/randomroom.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+}
