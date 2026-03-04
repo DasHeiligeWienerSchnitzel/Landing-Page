@@ -3911,11 +3911,11 @@ input, select, textarea {
 	/* Projektkarte mit Hintergrundbild */
 	.project-card{
 	  position: relative;
-	  border-radius: 10px;
+	  border-radius: 0;
 	  overflow: hidden;
 	  background-size: cover;
 	  background-position: center;
-	  padding: 3rem;
+	  padding: 0;
 	}
 	
 	/* Overlay für Lesbarkeit */
