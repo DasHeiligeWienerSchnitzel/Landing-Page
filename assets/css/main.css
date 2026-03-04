@@ -3910,67 +3910,80 @@ input, select, textarea {
 		}
 
 
-/* Projektkarten */
+/* ===== Projektkarten im .features Grid ===== */
 
-.features section.project-card{
-    position: relative;
-    padding: 3rem;
-    border-radius: 10px;
-    overflow: hidden;
-
-    background-size: cover;
-    background-position: center;
-
-    cursor: pointer;
+/* 1) Template-Linien/Gaps entfernen (Borders/Insets/Spacing) */
+#two .features {
+  gap: 0 !important;                 /* falls flex/grid gap gesetzt ist */
 }
 
-/* Lücken zwischen Karten entfernen */
-
-.features{
-    gap: 0;
+#two .features > section {
+  border: 0 !important;              /* HTML5UP zeichnet oft Trennlinien */
+  box-shadow: none !important;
+  margin: 0 !important;
 }
 
-.features section.project-card{
-    padding: 3rem;
+/* Manche HTML5UP-Templates geben jedem Feature-Block Innenabstand */
+#two .features > section.project-card {
+  padding: 0 !important;             /* wir steuern Padding selbst */
 }
 
-
-/* dunkles Overlay für Lesbarkeit */
-
-.project-card::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-    z-index: 1;
+/* 2) Card-Layout + Background */
+#two .features > section.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;               /* wenn du komplett bündig willst: 0 */
+  background-size: cover;
+  background-position: center;
+  min-height: 260px;                 /* optional, damit alle Karten “gleich hoch” sind */
 }
 
+/* Inhalt-Padding (statt am section, damit keine Lücken entstehen) */
+#two .features > section.project-card h3,
+#two .features > section.project-card p,
+#two .features > section.project-card span {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+#two .features > section.project-card h3 { padding-top: 3rem; }
+#two .features > section.project-card p  { padding-bottom: 3rem; }
 
-/* Text über dem Overlay */
-
-.project-card h3,
-.project-card p,
-.project-card span{
-    position: relative;
-    z-index: 2;
+/* 3) Overlay (Standard) */
+#two .features > section.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.50);
+  z-index: 1;
+  transition: background 0.2s ease;
 }
 
-
-/* Klickbarer Bereich über die ganze Karte */
-
-.project-card .card-link{
-    position: absolute;
-    inset: 0;
-    z-index: 3;
+/* 4) Hover: statt “aufpoppen” nur leicht aufhellen */
+#two .features > section.project-card:hover::before {
+  background: rgba(0,0,0,0.35);
 }
 
-
-/* kleiner Hover Effekt */
-
-.project-card{
-    transition: transform 0.25s ease;
+/* 5) Text über dem Overlay */
+#two .features > section.project-card h3,
+#two .features > section.project-card p,
+#two .features > section.project-card span {
+  position: relative;
+  z-index: 2;
 }
 
-.project-card:hover{
-    transform: scale(1.03);
+/* 6) Ganze Karte klickbar (Overlay-Link) */
+#two .features > section.project-card .card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+/* Wichtig: damit wirklich alles klickbar ist – Klicks gehen an den Overlay-Link */
+#two .features > section.project-card > *:not(.card-link) {
+  pointer-events: none;
+}
+
+/* Optional: Cursor */
+#two .features > section.project-card {
+  cursor: pointer;
 }
