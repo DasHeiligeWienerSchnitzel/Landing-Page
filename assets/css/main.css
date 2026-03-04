@@ -3910,32 +3910,33 @@ input, select, textarea {
 
 	/* Projektkarte mit Hintergrundbild */
 	.project-card{
-	  position: relative;
-	  border-radius: 0;
-	  overflow: hidden;
-	  background-size: cover;
-	  background-position: center;
-	  padding: 0;
+		position: relative;
+		cursor: pointer;
+		border-radius: 0;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		padding: 0;
 	}
 	
 	/* Overlay für Lesbarkeit */
 	.project-card::before{
-	  content:"";
-	  position:absolute;
-	  inset:0;
-	  background: rgba(0,0,0,0.5);
-	  z-index: 1;
+		content:"";
+		position:absolute;
+		inset:0;
+		background: rgba(0,0,0,0.5);
+		z-index: 1;
 	}
 	
 	/* Inhalt über dem Overlay */
 	.project-card > *:not(.card-link){
-	  position: relative;
-	  z-index: 2;
+		position: relative;
+		z-index: 2;
 	}
-	
+
 	/* Link über die ganze Karte */
 	.project-card .card-link{
-	  position:absolute;
-	  inset:0;
-	  z-index: 3;
+		position:absolute;
+		inset:0;
+		z-index: 10;
 	}
