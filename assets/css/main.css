@@ -3909,34 +3909,36 @@ input, select, textarea {
 
 		}
 
-.project-card {
+.features .project-card {
     position: relative;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 20em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0 !important;
 }
 
-.card-link {
+.features .project-card .card-link {
     position: absolute;
     inset: 0;
     display: block;
     z-index: 10;
 }
 
-.text-box {
-    position: relative;
+.features .project-card .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 11;
     pointer-events: none;
+
     background: rgba(0,0,0,0.4);
     padding: 20px 30px;
     border-radius: 6px;
     color: white;
+    width: min(80%, 600px);
     max-width: 600px;
 }
 
