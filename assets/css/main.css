@@ -3915,15 +3915,12 @@ input, select, textarea {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 20em; /* adjust to your template */
+    min-height: 20em;
 }
 
 .card-link {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     display: block;
     z-index: 10;
 }
