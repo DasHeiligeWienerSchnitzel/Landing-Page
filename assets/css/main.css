@@ -3910,9 +3910,20 @@ input, select, textarea {
 		}
 
 .card-link {
+    display: block;
     text-decoration: none;
     color: inherit;
-    display: block;
+    width: 100%;
+}
+
+.project-card {
+    width: 100%;
+    min-height: 350px; /* or whatever height you want */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px;
+    box-sizing: border-box;
 }
 
 .text-box {
