@@ -3941,12 +3941,3 @@ input, select, textarea {
     width: min(80%, 600px);
     max-width: 600px;
 }
-
-.project-card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
