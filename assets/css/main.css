@@ -3916,6 +3916,10 @@ input, select, textarea {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 20em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-link {
