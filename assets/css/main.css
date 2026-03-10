@@ -3909,6 +3909,12 @@ input, select, textarea {
 
 		}
 
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .text-box {
     background: rgba(0,0,0,0.4);
     padding: 20px 30px;
