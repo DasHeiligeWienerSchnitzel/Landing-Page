@@ -3910,9 +3910,9 @@ input, select, textarea {
 		}
 
 .text-box {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.4);
     padding: 20px 30px;
-    border-radius: 8px;
+    border-radius: 6px;
     color: white;
     max-width: 600px;
 }
