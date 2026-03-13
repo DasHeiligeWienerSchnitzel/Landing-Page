@@ -3927,8 +3927,7 @@ input, select, textarea {
 }
 
 .features .project-card:hover {
-    transform: translateY(-6px);
-  	box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+    filter: brightness(0.75) contrast(1.1);
 }
 
 .features .project-card .text-box {
